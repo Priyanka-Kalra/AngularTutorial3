@@ -8,5 +8,9 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'tut3';
+  
+  handleEvent(event:Event){
+    console.log('Event Called: ',event.type);
+    console.log('Value Entered: ',(event.target as HTMLInputElement).value);
+  }
 }
